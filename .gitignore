@@ -1,0 +1,5 @@
+# ignore systemd
+systemd
+
+# ignore systemd
+__pycache__
