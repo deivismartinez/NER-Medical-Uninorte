@@ -1,0 +1,5 @@
+ID	Model	Precision	Recall	F1	Tipo	Sub-track
+1	roberta-large-bne-capitel-ner	0.4617	0.2855	0.352	2	strict
+1	roberta-large-bne-capitel-ner	0.4726	0.2911	0.360	2	merged
+2	roberta-base-bne-capitel-ner-plus	0.5161	0.2978	0.377	2	strict
+2	roberta-base-bne-capitel-ner-plus	0.5212	0.3007	0.381	2	merged

@@ -1,0 +1,23 @@
+1	roberta-large-bne-capitel-ner
+2	roberta-base-bne-capitel-ner-plus
+3	roberta-base-bne-capitel-ner
+5	bsc-bio-ehr-es-pharmaconer
+6	roberta-base-bne-capitel-pos
+7	bert-base-multilingual-cased-ner-hrl
+8	xlm-roberta-base-wikiann-ner
+9	xlm-roberta-base-ner-hrl
+10	distilbert-base-multilingual-cased-ner-hrl
+11	xlm-roberta-large-ner-hrl
+12	bert-spanish-cased-finetuned-ner
+13	TinyBERT-spanish-uncased-finetuned-ner
+14	RuPERTa-base-finetuned-ner
+15	ner-spanish-large
+16	ner-multi
+17	anglicisms-spanish-mbert
+18	anglicisms-spanish-flair-cs
+19	xlm-roberta-large-ner-spanish
+20	wikineural-multilingual-ner
+21	distilbert-base-multilingual-cased-finetuned-conll2003-ner
+22	bertin-base-ner-conll2002-es
+23	xlm-roberta-base-finetuned-panx-ner
+24	stanza-es · Hugging Face
