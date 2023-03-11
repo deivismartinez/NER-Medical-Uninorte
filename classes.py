@@ -163,7 +163,7 @@ class BratAnnotation(Annotation):
         if file_name:
             self.sys_id = os.path.basename(os.path.dirname(file_name))
             self.doc_id = os.path.splitext(os.path.basename(file_name))[0]
-
+            
             self.parse_text_and_tags(file_name)
             self.parse_text_and_spans(file_name)
             self.file_name = file_name
@@ -183,6 +183,9 @@ class BratAnnotation(Annotation):
                         tag = label[0]
                         start = int(label[1])
                         end = int(label[2])
+                        #if "NOMBRE_SUJETO_ASISTENCIA" in label[0] or "TERRITORIO" in label[0] or "INSTITUCION" in label[0] or "OTHER" in label[0]:#Deivis
+                            #self.phi.append((tag, start, end))#Deivis
+                            #print(tag);#Deivis
                         self.phi.append((tag, start, end))
                     except IndexError:
                         print("ERROR! Index error while splitting sentence '" +
@@ -190,6 +193,7 @@ class BratAnnotation(Annotation):
                 else:  # Line is a Brat comment
                     if self.verbose:
                         print("\tSkipping line (comment):\t" + line)
+        #print(self.phi)#Deivis
 
     def parse_text_and_spans(self, file_name=None):
 
@@ -205,7 +209,9 @@ class BratAnnotation(Annotation):
                         label = line.split("\t")[1].split()
                         start = int(label[1])
                         end = int(label[2])
-
+                        #if "NOMBRE_SUJETO_ASISTENCIA" in label[0] or "TERRITORIO" in label[0] or "INSTITUCION" in label[0] or "OTHER" in label[0]:#Deivis
+                            #print(label[0])#Deivis
+                            #phi_tags.append((start, end))#Deivis
                         phi_tags.append((start, end))
                     except IndexError:
                         print("ERROR! Index error while splitting sentence '" +
@@ -486,7 +492,8 @@ class EvaluateSubtrack2(Evaluate):
 
             gold = set(self.get_tagset_span(gs_sas[doc_id]))
             sys = set(self.get_tagset_span(sys_sas[doc_id]))
-
+            #print(gs_sas);# Deivis
+            #print(sys);# Deivis
             self.tp.append(gold.intersection(sys))
             self.fp.append(sys - gold)
             self.fn.append(gold - sys)

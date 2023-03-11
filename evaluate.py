@@ -77,6 +77,7 @@ def get_document_dict_by_system_id(system_dirs, annotation_format):
         for fn in os.listdir(d):
             if fn.endswith(".ann") or fn.endswith(".xml"):
                 sa = annotation_format(os.path.join(d, fn))
+
                 documents[sa.sys_id][sa.id] = sa
 
     return documents

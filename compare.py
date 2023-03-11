@@ -7,6 +7,7 @@ def evaluate(file_type, model):
     gold ="systemd/gold/"
     system = "systemd/model_"+str(model.get("id"))+"/test"+str(file_type)+"/"
     response = subprocess.getoutput(f"{process} {gold} {system}")
+    ###print(response) ## Respuesta del proceso
     responses = response.split('\n')
     do_file(responses=responses,model = model,file_type = file_type)
     #subprocess.call(process, shell=True)

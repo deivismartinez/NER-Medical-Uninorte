@@ -3,3 +3,15 @@ ID	Model	Precision	Recall	F1	Tipo	Sub-track
 1	roberta-large-bne-capitel-ner	0.4726	0.2911	0.360	2	merged
 2	roberta-base-bne-capitel-ner-plus	0.5161	0.2978	0.377	2	strict
 2	roberta-base-bne-capitel-ner-plus	0.5212	0.3007	0.381	2	merged
+3	roberta-base-bne-capitel-ner	0.5025	0.2849	0.363	2	strict
+3	roberta-base-bne-capitel-ner	0.5064	0.2875	0.366	2	merged
+6	bert-base-multilingual-cased-ner-hrl	0.1876	0.09521	0.126	2	strict
+6	bert-base-multilingual-cased-ner-hrl	0.1911	0.09689	0.128	2	merged
+8	xlm-roberta-base-ner-hrl	0.006341	0.003003	0.004	2	strict
+8	xlm-roberta-base-ner-hrl	0.006714	0.00318	0.004	2	merged
+9	distilbert-base-multilingual-cased-ner-hrl	0.1449	0.08938	0.110	2	strict
+9	distilbert-base-multilingual-cased-ner-hrl	0.1472	0.0906	0.112	2	merged
+10	xlm-roberta-large-ner-hrl	0.004501	0.00212	0.002	2	strict
+10	xlm-roberta-large-ner-hrl	0.004876	0.002297	0.003	2	merged
+22	xlm-roberta-base-finetuned-panx-ner	0.04043	0.05723	0.047	2	strict
+22	xlm-roberta-base-finetuned-panx-ner	0.04145	0.05862	0.048	2	merged
