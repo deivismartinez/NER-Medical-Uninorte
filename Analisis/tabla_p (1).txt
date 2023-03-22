@@ -1,0 +1,2 @@
+Modelo	Precission	Recall	F1
+roberta-base-bne-capitel-ner-plus	0.5116279069767442	0.3235294117647059	0.39639639639639646

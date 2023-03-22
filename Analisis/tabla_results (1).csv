@@ -1,0 +1,18 @@
+roberta-base-bne-capitel-ner-plus
+                                  precision    recall  f1-score   support	
+	
+              CORREO_ELECTRONICO       0.00      0.00      0.00         2	
+          EDAD_SUJETO_ASISTENCIA       0.00      0.00      0.00         6	
+                          FECHAS       0.00      0.00      0.00         6	
+                ID_ASEGURAMIENTO       0.00      0.00      0.00         2	
+            ID_SUJETO_ASISTENCIA       0.00      0.00      0.00         5	
+ID_TITULACION_PERSONAL_SANITARIO       0.00      0.00      0.00         3	
+                           LUGAR       0.52      0.48      0.50        23	
+                          NOMBRE       0.65      0.79      0.71        14	
+                    ORGANIZACION       0.00      0.00      0.00         2	
+          SEXO_SUJETO_ASISTENCIA       0.00      0.00      0.00         5	
+	
+                       micro avg       0.51      0.32      0.40        68	
+                       macro avg       0.12      0.13      0.12        68	
+                    weighted avg       0.31      0.32      0.32        68	
+	
